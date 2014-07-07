@@ -6,6 +6,9 @@
 
     <Link rel="stylesheet" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+    
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
 <div class="nav">
@@ -24,5 +27,18 @@
 	<p>I create stunning websites and UI designs with a modern, pixel perfect feel. I've spent the last 3 years working as a web designer with big ideas and amazing people to help me along the way. My creations are focused on user experience and interaction that's not tacky and the same run of the mill designs. As a front-end developer, I always use practical and easy to understand applications of HTML5, CSS3 and jQuery.</p>
 	<a href="about.html">Learn more about me</a>
 </div>
+<script>
+$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.hello').css('height', windowHeight - 50);
+  };
+  setHeight();
+  
+  $(window).resize(function() {
+    setHeight();
+  });
+});
+</script>
 </body>
 </html>
