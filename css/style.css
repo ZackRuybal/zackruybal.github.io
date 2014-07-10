@@ -118,11 +118,9 @@ a {
 	margin: 0 auto;
 }
 .hello a {
-	color: #eee;
+	color: #e4e4e4;
 	text-decoration: underline;
-	font-style: italic;
-}
-@media (max-width: 768px) {
+}@media (max-width: 768px) {
     .hello h1 {
         font-size: 8em;
     }
