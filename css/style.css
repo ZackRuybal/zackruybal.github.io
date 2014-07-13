@@ -26,9 +26,14 @@ a {
 /*Helper Classes*/
 .ul {
     display: block;
+    padding-left: 20px;
 }
-.ul .no-bullets {
+.no-bullets {
     list-style: none;
+}
+.margin {
+	margin-left: 10px;
+	padding-left: 10px;
 }
 .ul > li .inline-list {
     display: inline;
@@ -122,7 +127,44 @@ a {
 .hello a {
 	color: #e4e4e4;
 	text-decoration: underline;
-}@media (max-width: 768px) {
+}
+.about {
+	text-align: center;
+	font-size: 13pt;
+}
+.fillwindow {
+	display: block;
+}
+.orange {
+	background: #f08b33;
+}
+.orange h1 {
+	color: #fff;
+	text-align: center;
+}
+.grey {
+	background: #eee;
+}
+.dark-grey {
+	background: #777;
+	color: #fff;
+}
+.third {
+	width: 32.9%;
+	display: inline-block;
+	vertical-align: top;
+	background: #eee;
+	border-radius: 3px;
+	height: 210px;
+	margin: 0 auto;
+}
+.third h2 {
+	text-align: center;
+}
+.third p {
+	padding-left: 3px;
+}
+@media (max-width: 768px) {
     .hello h1 {
         font-size: 8em;
     }

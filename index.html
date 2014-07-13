@@ -12,14 +12,16 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
     
     <!--jQuery-->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
 </head>
 <body>
+<a name="home"></a>
 <div class="nav">
 	<ul>
-		<li><a href="" class="active">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="resources.html">Resources</a></li>
+		<li><a href="">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#services">Services</a></li>
+		<li><a href="#resources">Resources</a></li>
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
 </div>
@@ -31,11 +33,51 @@
 	<p>I create stunning websites and UI designs with a modern, pixel perfect feel. I've spent the last 3 years working as a web designer with big ideas and amazing people to help me along the way. My creations are focused on user experience and interaction that's not tacky and the same run of the mill designs. As a front-end developer, I always use practical and easy to understand applications of HTML5, CSS3 and jQuery.</p>
 	<a href="about.html">Learn more about me &raquo;</a>
 </div>
+
+<div class="fillwindow grey about" name="about"><a name="about"></a>
+	<h1>About</h1>
+    <p>My name's Zack Ruybal, and I've been working in front-end web development and design for just over three years. The most important part of a website is the design and how people can interact with it. If the website doesn't catch the person's eye, and the experience is riddled with problems, people tend to not want to come back. But, in my experience, if the website looks good, and if it's functional and does what it says it'll do out of the box, I tend to trust the place of business for reliability in whatever they're providing.</p>
+</div>
+<div class="fillwindow orange ">
+	<a name="services"></a>
+	<h1>Services</h1>
+	<div class="third">
+		<h2>Website Re-Design</h2>
+		<p>Need a new look? I've got you covered. Keep all your old content, but with a brand new design and layout.</p>
+	</div>
+	<div class="third">
+		<h2>New Website</h2>
+		<p>If you're just starting out, this is what you want. We can work together on the layout and overall design of your website so that it's centered around your content and gives the user a great experience. Look at the <a href="#requirements">requirements</a> section for what you need to start off, and look at what I <em>don't</em> do to the right.</p>
+	</div>
+	<div class="third">
+		<h2>What I Don't Do.</h2>
+		<p>I believe that you need to be 100% up front with your customer, so, here's a list of things I don't do.</p><br>
+		<ul class="ul" style="font-weight:bold !important">
+			<li>Graphics of any kind</li>
+			<li>Back-end development (PHP, node, etc.)</li>
+			<li>Hosting</li>
+		</ul><br>
+		<p>If you're looking for any of the above, I do have some <a href="#recommendations">recommendations</a> for places that offer those types of services.</p>
+	</div>
+</div>
 <script>
 $(document).ready(function() {
   function setHeight() {
     windowHeight = $(window).innerHeight();
     $('.hello').css('height', windowHeight - 50);
+  };
+  setHeight();
+  
+  $(window).resize(function() {
+    setHeight();
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.fillwindow').css('height', windowHeight - 50);
   };
   setHeight();
   
